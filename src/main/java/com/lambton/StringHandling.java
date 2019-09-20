@@ -45,7 +45,25 @@ public class StringHandling {
         System.out.println("8. Sub string "+collegename.substring(11,20));
         System.out.println("9. character array "+ collegename.toCharArray() );
         System.out.println("10. concat " +collegename.concat(" 265 Yorkland Blvd.,North York"));
+        /*
+        int a[]={1,2,3,4,5};
+        int b[] = new int[]{1,2,3,4,5};
+        int c[]= new int[10];
 
+        */
+        char count=0;
+        char c[] = collegename.toCharArray();
+        char rev[]=new char[c.length];
+        for(int i=c.length-1;i >=0; i--)
+        {
+            rev[count++]=c[i];
+
+        }
+        String reverseString =new String(rev);
+        System.out.println(" Reverse String " + reverseString);
+
+        // even string
+        
 
     }
 
